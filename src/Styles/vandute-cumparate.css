@@ -1,0 +1,81 @@
+.cum-div {
+  width: 250px;
+  height: 508px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px -10px #000000;
+  position: relative;
+}
+.van-div {
+  width: 250px;
+  height: 510px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px -10px #000000;
+  position: relative;
+}
+.van-cum-container {
+  width: 100%;
+  padding-top: 200px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+.van-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2rem;
+}
+.cum-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2rem;
+}
+.cum-text,
+.van-text {
+  font-size: 600;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.both-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.both-scroll {
+  overflow-y: scroll;
+  width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f0f0;
+}
+.both-small {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .van-container{
+    grid-template-columns: auto;
+  }
+
+  .cum-container{
+    grid-template-columns: auto;
+  }
+  .van-cum-container{
+    display: grid;
+    padding-top: 150px;
+  }
+  .cum-div{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .van-div{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

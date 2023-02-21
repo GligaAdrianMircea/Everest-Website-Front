@@ -1,0 +1,228 @@
+.sub-container {
+  width: 85%;
+  height: 45px;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 10px 90px -10px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 60px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  z-index: 98;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-transition {
+  transform: translateY(-50px);
+  box-shadow: none;
+}
+.sub-menu {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.sub-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+.sub-cart-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.sub-cart-icon-container {
+  height: 100%;
+  position: relative;
+}
+.sub-count {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  background-color: #326be5;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+.sub-logout-btn {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #326be5;
+  border: none;
+}
+.sub-logout-btn:hover {
+  border: 2px solid #326be5;
+  background-color: #00000000;
+  color: #000000;
+}
+.sub-cart-container {
+  background-color: #f0f0f0;
+  width: 450px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow-y: scroll;
+}
+sub-cart-list {
+  list-style: none;
+}
+.sub-close-cart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 80px 3px #000000;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+.sub-close-cart:hover {
+  box-shadow: inset 0px 0px 4px 0px #000000;
+}
+.sub-title-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  margin-top: 50px;
+}
+.sub-sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 100%;
+  background-color: #f0f0f0;
+  z-index: 100;
+  color: #ffffff;
+  overflow-y: scroll;
+}
+.sub-element {
+  margin: 6vh;
+  margin-left: 0;
+  list-style: none;
+  box-shadow: 15px 15px 40px -15px #000000;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.sub-parent {
+  width: 350px;
+  background-color: #ffffff;
+  height: 47px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.sub-parent div {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.sub-element:hover {
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+  animation: slide-right 0.5s ease-out both;
+}
+.sub-element:hover sub-parent {
+  background-color: rgb(255, 255, 255);
+}
+.sub-parent:hover {
+  background-color: rgb(255, 255, 255);
+}
+.sub-parent:hover sub-element {
+  background-color: rgb(255, 255, 255);
+}
+.sub-close-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 80px 3px #000000;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+.sub-close-sidebar:hover {
+  box-shadow: inset 0px 0px 4px 0px #000000;
+}
+.hide {
+  visibility: visible;
+}
+.present {
+  visibility: visible !important;
+}
+
+.sub-cart-footer-container {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  height: 100px;
+  width: 440px;
+  background-color: #ffffff;
+  display: grid;
+  justify-content: center;
+  box-shadow: 0px -2px 15px -10px #000000;
+  z-index: 100;
+}
+.sub-cart-total {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+@keyframes swing-in-left-fwd {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+.sub-phone-container{
+  display: grid;
+  align-items: center;
+  display: none
+}
+@media screen and (max-width: 767px){
+  .sub-container{
+    width: 80%;
+    margin-left: 10%;
+      margin-right: 10%;
+  }
+  .sub-phone-container{
+    display: block;
+  }
+  .sub-sidebar-container{
+    width: 100%;
+  }
+  .sub-desktop-container{
+    display: none;
+  }
+  .sub-cart-container{
+    width: 100%;
+  }
+  .sub-cart-footer-container{
+    width: 100%;
+  }
+}

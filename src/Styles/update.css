@@ -1,0 +1,76 @@
+.upt-formsdiv {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.upt-center-inputs {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+}
+.upt-put-down {
+  top: 0;
+  height: 100%;
+  width: 80%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.upt-input-field {
+  background-color: rgb(216, 216, 216);
+  border: none;
+  padding: 0.4rem;
+  border-radius: 10px;
+  width: 100%;
+}
+.upt-button {
+  margin-top: 3rem;
+  background-color: #326be5;
+  color: white;
+  padding: 0.34rem;
+}
+.upt-labelll {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.upt-close {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 80px 3px #000000;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.upt-close:hover {
+  box-shadow: inset 0px 0px 4px 0px #000000;
+}
+@media screen and (max-width: 767px) {
+  .upt-formsdiv{
+  background-color: white;
+  height: 100%;
+  width: 33%;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 10%;
+  }
+}

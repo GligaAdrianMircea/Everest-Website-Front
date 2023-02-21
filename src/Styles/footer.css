@@ -1,0 +1,102 @@
+.footer-container {
+  width: 100%;
+  height: 200px;
+  background-color: #dadada;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+.footer-small-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2rem;
+}
+.footer-logo,
+.footer-copy,
+.footer-all {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+.footer-logo {
+  background-image: url(../Images/everest-logo.png);
+  width: 150px;
+  height: 50px;
+  background-size: cover;
+}
+.footer-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.footer-links-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  width: 80%;
+  height: 50px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.footer-color {
+  color: black;
+}
+.footer-accounts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.footer-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #bfbfbf;
+  box-shadow: 10px 10px 90px rgba(0, 0, 0, 0.25);
+  display: grid;
+  place-items: center;
+}
+.footer-size {
+  font-size: 1.5rem;
+}
+.footer-email {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 75px;
+  height: 75px;
+  background-color: #dadada;
+  border-radius: 50%;
+  box-shadow: 10px 10px 90px rgba(0, 0, 0, 0.25);
+  display: grid;
+  place-items: center;
+}
+.footer-arrow {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px) {
+  .footer-nav {
+    width: 0;
+    visibility: hidden;
+  }
+  .footer-small-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-column-gap: 2rem;
+    margin-left: 15%;
+  }
+  .footer-container {
+    height: 500px;
+  }
+}

@@ -1,0 +1,143 @@
+.all-container{
+  padding-top: 120px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.datele-castigatorului{
+  display: block;
+}
+.all-big-title{
+  font-size: 3rem;
+  text-align: center;
+}
+.all-small-container{
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.all-products-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+}
+.all-parent-div{
+  width: 250px;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px -10px #000000;
+  position: relative;
+}
+.all-image{
+  width: 100%;
+  height: 170px;
+}
+.all-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.all-small{
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.all-price{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.all-cart{
+  font-size: 100px;
+}
+.all-users{
+  overflow-y: scroll;
+  width: 90%;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.all-date{
+  font-size: 1rem;
+  font-weight: 500;
+  bottom: 60px;
+}
+.all-cart-container{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  background-color: #326BE5;
+}
+.all-cart{
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.all-update-form{
+  position: fixed;
+  top: 0;
+  left: 30%;
+  top: 10%;
+  z-index: 1000;
+  width: 700px;
+  height: 700px;
+}
+.active-update{
+  z-index: 1000;
+}
+.inactive-update{
+  z-index: -99999;
+}
+.all-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+.all-delete{
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.all-update-button{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bigdiv{
+  background-color: rgb(171, 135, 135);
+  height: 100vh;
+  width: 100vw;
+}
+.smallone{
+  background-color: rgb(95, 39, 39);
+  height: 100vh;
+  width: 100vw;
+}
+@media screen and (max-width: 767px){
+  .all-products-container {
+      display: grid;
+      grid-template-columns: auto;
+    }
+}
+@media screen and (min-width: 767px) and (max-width:1023px){
+  .all-products-container {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+}

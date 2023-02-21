@@ -1,0 +1,28 @@
+.about-container {
+  width: 100%;
+  height: auto;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 100px;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+.about-title {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-text {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .about-container{
+    padding: 0;
+  }
+  .about-text{
+    font-size: 1rem;
+  }
+}

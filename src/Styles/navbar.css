@@ -1,0 +1,104 @@
+.navbar-container {
+  width: 90%;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 10px 10px 90px -10px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  z-index: 99;
+  overflow-x: hidden;
+}
+.navbar-left {
+  background-image: url(../Images/everest-logo.png);
+  background-size: cover;
+  height: 50px;
+  width: 120px;
+}
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
+}
+.navbar-user {
+  color: rgb(250, 250, 250);
+  background-color: #326BE5;
+  display: grid;
+  place-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 100 !important;
+}
+.navbar-arrow{
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transform: rotateZ(90deg);
+}
+.navbar-link-container:focus{
+  color: #234897;
+}
+.navbar-link-container{
+  color: #234897;
+}
+.navbar-rotate{
+  animation: rotate-90-cw 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes rotate-90-cw {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-center{
+    display: none;
+  }
+  .navbar-user{
+  color: rgb(250, 250, 250);
+  background-color: #326BE5;
+  display: grid;
+  place-content: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 100 !important;
+  }
+  .navbar-left{
+    height: 37px;
+    width: 77px;
+  }
+  .log-in{
+    font-size: 9px;
+  }
+}

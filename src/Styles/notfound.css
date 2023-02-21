@@ -1,0 +1,67 @@
+.found-container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 200px;
+  box-sizing: border-box;
+}
+.found-container:hover .found-circle {
+  animation: slide-bottom 0.5s ease-in both;
+}
+.found-link {
+  width: 200px;
+  height: 40px;
+  border-radius: 60px;
+  background-color: #326be5;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 4px solid #326be5;
+}
+.found-link:hover {
+  border: 4px solid #326be5;
+  background-color: #ffffff;
+  color: #000000;
+}
+.found-four {
+  font-size: 8rem;
+  text-align: center;
+}
+.found-text {
+  font-size: 3rem;
+  text-align: center;
+}
+.found-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #326be5;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(95vh);
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .found-circle{
+    width:0;
+  }
+  .found-four{
+    font-size: 5rem;
+  }
+  .found-text{
+    font-size: 2rem;
+  }
+}
